@@ -38,7 +38,6 @@ public class Main extends JFrame {
         scrollInfo.setViewportView(jtTt);
         scrollInfo.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 
-
         final JButton jb = new JButton("二代网系");
         jb.setBounds(5, 5, 385, 40);
         jb.addActionListener(new ActionListener() {
@@ -46,13 +45,13 @@ public class Main extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 try {
 
-                   /* FDMA.main(null);
+                    FDMA.main(null);
                     TD30.main(null);
                     TD31.main(null);
                     TD31.main(null);
                     TD32.main(null);
                     TD34.main(null);
-                    KGR.main(null);*/
+                    KGR.main(null);
 
                     print(jt, "E:\\Daily\\FDMA.txt");
                     print(jt, "E:\\Daily\\FDMADH.txt");
@@ -82,9 +81,7 @@ public class Main extends JFrame {
                     print(jt, "E:\\Daily\\KGRDH.txt");
                     print(jt, "E:\\Daily\\KGRTH.txt");
                     print(jt, "E:\\Daily\\KGRNH.txt");
-
                 } catch (Exception ex) {
-
                     ex.printStackTrace();
                 }
             }
@@ -99,20 +96,16 @@ public class Main extends JFrame {
                     TT.main(null);
                     print(jtTt, "E:\\Daily\\TT1.txt");
                     print(jtTt, "E:\\Daily\\TT2.txt");
-
                 } catch (Exception ex) {
-
                     ex.printStackTrace();
                 }
             }
         });
-
         cont.add(jb);
         cont.add(jbTt);
         cont.add(scroll);
         cont.add(scrollInfo);
-
-        setBounds(300,30,830,600);
+        setBounds(300,30,830,635);
         setVisible(true);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
